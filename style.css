@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.jumbotron{
+    padding-top: 3rem;
+    background-color: #FFE7EB;
+}
+.jumbotron img {
+  margin-top: 20px; /* Menyesuaikan margin atas pada judul */
+}
+
+.jumbotron h3 {
+  margin-top: 10px;
+  background-color: #D66364; /* Ganti dengan warna latar belakang yang Anda inginkan */
+  padding: 20px 15px; /* Menambahkan padding untuk memberikan ruang di sekitar teks */
+  border-radius: 5px; /* Menambahkan sudut melengkung pada latar belakang */
+  color: #ffffff; /* Warna teks pada judul */
+}
+
+
+.jumbotron p {
+  margin-top: 5px; /* Menyesuaikan margin atas pada paragraf */
+}
+
+.custom-btn {
+  background-color: #D66364;
+  color: #ffffff;
+  /* Tambahkan CSS tambahan yang diperlukan untuk styling lainnya */
+}
+
+
+/* Features */
+#about {
+  padding-top: 50px;
+  text-align: center; /* Untuk menjaga elemen <h3> berada di tengah secara horizontal */
+}
+
+#about h2 {
+  font-weight: bold;
+  background-color: #D66364;
+  color: #ffffff;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+#about h3 {
+  font-weight: bold;
+  background-color: #D66364;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 auto; /* Untuk menjaga elemen <h3> tetap berada di tengah secara horizontal */
+}
+
+.desc ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style-type: disc;
+  padding-left: 20px; /* Jarak antara poin (bullet) dengan teks */
+}
+
+.desc li {
+  margin-bottom: 5px;
+  text-align: left; /* Mengatur teks rata kiri */
+}
+
+
+
+
+.parent-list {
+  display: flex;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  gap: 50px;
+}
+
+.parent-list img {
+  width: 537px;
+  height: 281px;
+}
+
+
+
+.desc {
+  align-self: center;
+}
+
+.konseling,
+.meditasi,
+.musik-relax,
+.tes-kesehatan {
+  padding-top: 80px;
+}
+
+.footer {
+ padding: 8px;
+  height: auto 70px;
+}
+
+
+/* responsive */
+@media screen and (max-width: 986px) {
+  /* hero section */
+  .hero .content p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .parent-list {
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .parent-list img {
+    width: 437px;
+    height: 340px;
+  }
+  .parent-list.meditasi,
+  .musik-relax {
+    flex-wrap: wrap-reverse;
+  }
+
+  /* profile */
+  .card-container {
+    padding-top: 30px;
+    margin: 0;
+  }
+  .card-list {
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  .parent-list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .parent-list img {
+    width: 337px;
+    height: 231px;
+  }
+  /* footer */
+  .parent-footer {
+    flex-direction: column;
+    height: auto;
+  }
+  footer p {
+    text-align: center;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  /* height: 400vh; */
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fb;
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* navbar */
+.navbar {
+  background-color: #03bbdd;
+}
+
+.container-fluid .navbar-brand {
+  font-weight: bold;
+}
+
+.container-fluid .navbar-brand:hover {
+  color: white;
+}
+
+.container-fluid a {
+  color: white;
+}
+
+.collapse {
+  justify-content: flex-end;
+}
+
+/* dropdown menu */
+.dropdown-menu a {
+  color: black;
+}
+
+/* parent artikel */
+.parent-article {
+  margin-top: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+/* list artikel */
+.article {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 120px;
+}
+
+
+
+.article h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.list-article {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* card */
+.card-body .btn {
+  border: solid 1px #03bbdd;
+}
+
+.card-body .btn:hover {
+  background-color: #D66364;
+  color: white;
+}
+
+/* footer */
+footer {
+  margin-top: 50px;
+  background-color: #03bbdd;
+}
+
+.parent-footer {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  align-self: center;
+}
+
+.parent-footer {
+  color: white;
+  font-weight: 400;
+}
+
+/* responsive */
+@media screen and (max-width: 986px) {
+  .parent-article {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  .parent-article {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
